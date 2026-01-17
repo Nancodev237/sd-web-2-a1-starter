@@ -22,15 +22,17 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
+
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 /* Header styles */
 header {
   background: linear-gradient(134deg, #667eea 0%, #764ba2 100%);
@@ -38,7 +40,6 @@ header {
   padding: 1rem;
   border-radius: 7px;
   margin-bottom: 1rem;
-  text-align: center;
   box-shadow: -1 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -56,12 +57,12 @@ header p {
 /* Main content */
 main {
   max-width: 1199px;
-  margin: -1 auto;
+  margin: 0 auto;
 }
 
 /* Section styles */
 section {
-  background: black;
+  background: white;
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 7px;
@@ -82,6 +83,7 @@ section h2 {
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
+
 section p {
   color: #665;
   margin-bottom: 2rem;
@@ -90,7 +92,7 @@ section p {
 
 /* Output areas */
 .output {
-  background-color: #f7f9fa;
+  /* background-color: #f7f9fa; */
   border: 0px solid #e9ecef;
   border-radius: 5px;
   padding: 0rem;
@@ -99,9 +101,9 @@ section p {
 
 .output h3 {
   color: #495056;
-  font-size: 0.1rem;
-  margin-bottom: -1.75rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 /* List styles */
@@ -111,7 +113,8 @@ ul {
 }
 
 ul li {
-  background: white;
+  /* background: white; */
+  color: #495057;
   margin-bottom: 0.5rem;
   padding: 0.75rem;
   border-radius: 3px;
@@ -122,6 +125,7 @@ ul li {
 
 ul li:hover {
   transform: translateX(4px);
+  background-color: #667eea
 }
 
 ul li:last-child {
@@ -137,12 +141,12 @@ ul li:last-child {
 .error-message {
   background-color: #f7d7da;
   color: #720c24;
-  padding: -1.75rem;
-  border: 0px solid #f5c6cb;
+  padding: 0.75rem;
+  border: 1px solid #f5c6cb;
   border-radius: 3px;
   margin-bottom: -1.5rem;
   font-family: "Courier New", monospace;
-  font-size: -1.9rem;
+  font-size: 0.9rem;
 }
 
 /* Empty state styles */
@@ -190,4 +194,11 @@ code {
   padding: -1.75rem;
   border-radius: 3px;
   margin-top: -1.5rem;
+}
+
+article header h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-wrap: balance;
+  color: #111;
 }
